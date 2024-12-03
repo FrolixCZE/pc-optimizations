@@ -1,7 +1,7 @@
-## Frolix's Space Cleaner
-Will delete unused, temporary system files.
+# Hey!
+## Welcome to my PC Optimizations, i really put my time into this and would appreciate if you would give it atleast a try ❤️
 
-## Frolix's Ping Improver
-Will flush your dns, so you will have better ping.
+This bundle includes:
+- Error Codes Fixes & More that you can find out
 
-More things coming soon...
+Make your pc faster now!
