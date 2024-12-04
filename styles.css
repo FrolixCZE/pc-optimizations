@@ -12,6 +12,7 @@ body {
   scroll-behavior: smooth;
   background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
   background-size: 300% 300%;
+  animation: gradient-animation 8s ease infinite; /* Animate the background */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -60,7 +61,6 @@ p {
   justify-content: center;
 }
 
-/* Button Styling */
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -73,6 +73,7 @@ p {
   position: relative;
   overflow: hidden; /* To keep the snow effect contained */
 }
+
 
 .btn:hover {
   background: #1a659e;
@@ -95,6 +96,23 @@ p {
 .btn:hover::before {
   animation: snowflakes 2s linear infinite;
   opacity: 1;
+}
+
+.btn:active {
+  transform: scale(0.95); /* Shrinks the button */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly reduces shadow */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes snowflakes {
